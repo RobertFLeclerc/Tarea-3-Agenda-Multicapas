@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agenda web de contactos con servicio HTTP GET y POST">
+  <title>Agenda Multicapas | Programación WEB</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand"><div><p class="eyebrow">PROGRAMACIÓN WEB</p><h1>Agenda Multicapas</h1></div></div>
+      <p class="subtitle">Administra tus contactos de forma sencilla y organizada.</p>
+    </header>
+    <section class="layout" aria-label="Agenda de contactos">
+      <section class="panel form-panel" aria-labelledby="form-title">
+        <div class="panel-heading"><div><p class="eyebrow">NUEVO REGISTRO</p><h2 id="form-title">Agregar contacto</h2></div></div>
+        <p class="hint">Completa los datos para guardar un nuevo contacto.</p>
+        <form id="contact-form">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Ej. Robert" autocomplete="given-name" maxlength="80" required>
+          <label for="apellido">Apellido</label>
+          <input id="apellido" name="apellido" type="text" placeholder="Ej. Leclerc" autocomplete="family-name" maxlength="80" required>
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="Ej. 829-257-8109" autocomplete="tel" maxlength="30" required>
+          <button id="save-button" class="primary-button" type="submit">Guardar contacto</button>
+        </form>
+        <p id="form-message" class="message" role="status" aria-live="polite"></p>
+      </section>
+      <section class="panel list-panel" aria-labelledby="list-title">
+        <div class="list-header"><div><p class="eyebrow">DIRECTORIO</p><h2 id="list-title">Mis contactos <span id="contact-count" class="count">0</span></h2></div><button id="refresh-button" class="secondary-button" type="button">Actualizar</button></div>
+        <div class="search-wrap"><label class="sr-only" for="search">Buscar contactos</label><input id="search" type="search" placeholder="Buscar contacto…"></div>
+        <div id="list-message" class="message" role="status" aria-live="polite"></div>
+        <div id="contact-list" class="contact-list"></div>
+      </section>
+    </section>
+    <footer>ITLA · Programación WEB · Tarea 3</footer>
+  </main>
+</body>
+</html>
