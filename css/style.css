@@ -17,7 +17,7 @@ body { margin: 0; min-height: 100vh; }
 
 .container { max-width: 960px; margin: auto; padding: 64px 24px 32px; }
 
-/* Encabezado */
+
 .header { margin-bottom: 48px; }
 .brand { display: block; }
 .brand-icon { display: none; }
@@ -32,7 +32,7 @@ h1 { margin: 0; font-size: 32px; font-weight: 600; letter-spacing: -0.03em; }
 h2 { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
 .subtitle { margin: 12px 0 0; color: var(--muted); font-size: 15px; }
 
-/* Layout y paneles */
+
 .layout {
   display: grid;
   grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
@@ -47,7 +47,7 @@ h2 { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
 }
 .hint { margin: 12px 0 28px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 
-/* Formulario */
+
 form { display: flex; flex-direction: column; }
 label { margin-bottom: 8px; font-size: 13px; font-weight: 500; }
 input {
@@ -66,7 +66,7 @@ input::placeholder { color: #a1a1aa; }
 form input { margin-bottom: 20px; }
 input:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.08); }
 
-/* Botones */
+
 .primary-button, .secondary-button {
   font: inherit;
   font-size: 14px;
@@ -81,7 +81,7 @@ input:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(24, 24, 27, 0
 .secondary-button:hover { background: var(--soft); }
 .primary-button:disabled, .secondary-button:disabled { opacity: 0.5; cursor: wait; }
 
-/* Lista */
+
 .list-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .count {
   display: inline-block;
@@ -120,7 +120,7 @@ input:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(24, 24, 27, 0
 .contact-phone { margin-top: 3px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
 .empty { padding: 40px 12px; text-align: center; font-size: 14px; color: var(--muted); }
 
-/* Mensajes */
+
 .message { margin: 12px 0; font-size: 13px; line-height: 1.5; }
 .message:empty { display: none; }
 .message.error { color: #b42318; }

@@ -1,6 +1,6 @@
 'use strict';
 
-// Servicio web indicado en el cronograma de Programación WEB.
+
 const API_URL = 'http://www.raydelto.org/agenda.php';
 const form = document.getElementById('contact-form');
 const list = document.getElementById('contact-list');
