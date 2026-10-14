@@ -18,3 +18,9 @@ Desarrollo de una agenda web utilizando HTML, CSS y JavaScript, que permite visu
 ## Captura de pantalla
 
 ![Agenda Multicapas](img/captura-agenda.png)
+
+## Prueba de registro de contacto
+
+Se realizó una prueba agregando un nuevo contacto a la agenda mediante el método HTTP POST.
+
+![Contacto agregado](img/captura-contacto.png)
